@@ -21,10 +21,10 @@
   <div id="container">
     <nav class="navbar">
       <div>
-        <img src="assets/prepmelogo_black.png" id="logo-image" alt="Description of image"> 
+        <img src="assets/prepmelogo_black.png" id="logo-image" alt="Description of image">
         <div id="title">PrepBot</div>
       </div>
-      
+
       <ul class="navbar-nav">
         <li>
           <a href="#" class="navbar-link" onclick="darkMode()">
@@ -40,11 +40,14 @@
 
       <h1 style="font-weight: 430; margin-bottom: 2px">Nail Your Next Interview!</h1>
       <div id="app">
+        <h2 style="color: red; text-align: center;">Please note <br> Server is no longer hosted for AI responses</h2>
+
         <p style="text-align: center">
           PrepBot can help you prepare for your upcoming interview by generating potential
           interview questions based on the job posting you paste in the textbox. You can then record your audio response
           to each
-          question and submit it for evaluation. PrepBot will provide feedback on your performance, including areas where
+          question and submit it for evaluation. PrepBot will provide feedback on your performance, including areas
+          where
           you can improve using STAR (<b>Situation</b>, <b>Task</b>, <b>Action</b>, and <b>Result</b>) format.
         </p>
         <br>
@@ -52,36 +55,37 @@
         <button type="submit" id="next-question-button"> NEXT QUESTION </button>
         <div class="text-to-voice-wrapper">
           <div class="left">
-                  <form>
-                    <textarea name="prompt" rows="1" cols="1" placeholder="Enter job description here..."></textarea>
-                    <div class="record-button">
-                      <button type="submit"> SEND PROMPT
-                       
-                    </div>
-                  </form>
-          </div>
-       
-                <script type="module" src="script.js"></script>
+            <form>
+              <textarea name="prompt" rows="1" cols="1" placeholder="Enter job description here..."></textarea>
+              <div class="record-button">
+                <button type="submit"> SEND PROMPT
 
-          <div style = "margin-top: -50px;" class ="right">
-                <div id="speech">
-                  <!-- <h2 style="font-weight: 430; margin-bottom: 2px; font-size: 48px;">Speech-to-Text</h2>
+              </div>
+            </form>
+          </div>
+
+          <script type="module" src="script.js"></script>
+
+          <div style="margin-top: -50px;" class="right">
+            <div id="speech">
+              <!-- <h2 style="font-weight: 430; margin-bottom: 2px; font-size: 48px;">Speech-to-Text</h2>
                   <p></p> -->
-                  <textarea name="prompt" rows="1" cols="1" placeholder="Your recorded speech will show up here..." id="transcription"></textarea>
-                  <!-- <div id="transcription"></div> -->
-                  <div style="display: none;" id="response"></div>
-                  <div id="buttons">
-                    <button id="start-btn">RECORD SPEECH</button>
-                    <button id="stop-btn" onclick disabled>SUBMIT</button>
-                  </div>
-                </div>
-                <script src="SpeechToText.js"></script>
+              <textarea name="prompt" rows="1" cols="1" placeholder="Your recorded speech will show up here..."
+                id="transcription"></textarea>
+              <!-- <div id="transcription"></div> -->
+              <div style="display: none;" id="response"></div>
+              <div id="buttons">
+                <button id="start-btn">RECORD SPEECH</button>
+                <button id="stop-btn" onclick disabled>SUBMIT</button>
+              </div>
             </div>
-            
-  </div>
-   
+            <script src="SpeechToText.js"></script>
+          </div>
+
+        </div>
+
     </main>
-    
+
 
     <footer>
       <p>&copy; 2023 Made by Ankit Ahlwat, Cadan Glass, Ehsan Emadi and Amir Eskandari for Hack the Break 2023</p>
